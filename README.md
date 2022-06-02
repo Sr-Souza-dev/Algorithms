@@ -28,7 +28,7 @@ Como já observamos, P ⊆ NP, ou seja, todo problema polinomial de decisão é 
 <br>
 A propósito, o Instituto Clay de Matemática oferece um prêmio de um milhão de dólares pela solução da questão 'P == NP'?.
 
-<a href="https://gizmodo.uol.com.br/problema-matematica-roubar-bitcoins/"><img href="images/p-versus-np.png"><a>
+<a href="https://gizmodo.uol.com.br/problema-matematica-roubar-bitcoins/"><img src="images/p-versus-np.png"><a>
 
 
 
