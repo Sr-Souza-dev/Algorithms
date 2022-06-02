@@ -26,7 +26,7 @@ Segue o mesmo padrão que os problemas NP-completo, mas engloba a classe de prob
 #### P == NP?
 Como já observamos, P ⊆ NP, ou seja, todo problema polinomial de decisão é polinomialmente verificável. O bom-senso sugere que P é apenas uma pequena parte de NP. Surpreendentemente, ninguém encontrou ainda um problema de NP que seja não polinomial (embora existam muitos candidatos).
 <br>
-A propósito, o Instituto Clay de Matemática oferece um prêmio de um milhão de dólares pela solução da questão 'P == NP'?.
+A propósito, o Instituto Clay de Matemática oferece um prêmio de um milhão de dólares pela solução da questão 'P==NP'?.
 
 <a href="https://gizmodo.uol.com.br/problema-matematica-roubar-bitcoins/"><img src="images/p-versus-np.png"><a>
 
