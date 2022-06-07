@@ -4,6 +4,36 @@ Olá, meu nome é Gabriel Rosa. No momento, sou estudante de Engenharia de Compu
 ## Introdução
 Informalmente, um algoritmo é qualquer procedimento computacional bem definido que objetiva solucionar algum problema computacional bem especifico, ou seja, a partir de um conjunto de valores como entrada ele produz algum(s) conjunto(s) de valor(es) como saída. Diz-se que um algoritmo é correto se, para toda instância de entrada, ele retornar uma saída correta
 
+## Complexidade
+A complexidade (T(n)) de um algoritmo é dificilmente mensurada de forma precisa (devido a dificuldade em determinados casos). Para facilitar essa tarefa sem perder o real significado de complexidade, o alemão Edmund Landau desenvolveu a teoria da complexidade (que em sua essência, objetiva restringir o dominio de complexidade de uma função atravez de equações matemáticas simples). <br>
+Supondo que um determinado algoritmo tenha custo de **T(n) = 4n^2 + 2n + 3**, a teória da complexidade diz que um único termo da função é capaz de expressar determinado custo de forma simples sem muitas perdas para valores de 'n' tendendo ao infinito, ou seja, um único termo se torna tão grande a partir de determinado 'n' que o resto da função T(n) se torna despresivel.
+
+![](images/complexNotation.jpeg)
+
+#### Big O notation
+A notação big O é a mais utilizada no ramo da computação, pois ela descreve de forma clara e fácil um 'limite assintótico' que é capaz de expressar o pior caso de execução de um algoritmo, sendo assim possivél análisar/garantir condições em que um algoritmo pode ser aceito. 
+<br>
+Para que essa notação seja aceita, é preciso garantir que:
+
+```sh
+f(x) = O(g(x)) se e somente se |f(N)| <= C|g(N)| para todo N > n0 
+```
+
+![](images/funcO.jpeg)
+
+    É necessário que exista um 'C', tal que Cg(N) >= f(N) a partir de um determinado n0.
+
+As funções mais comuns podem ser visualizadas abaixo com seus respectivos gráficos. (Na imagem abaixo a função fatorial não foi expressa, mas ela é mais custosa do que a exponecial "!n > c^n").
+
+| ---- | ---- |
+| ![](images/Onotation.jpeg) | ![](images/cus.jpg) |
+| ---- | ---- |
+
+Essa notação é comumente utilizada em maratonas de programação em que a performace do algoritmo influência diretamente na sua aceitabilidade. Na imagem abaixo é possivel visualizar uma aproximação de entradas sobre cada complexidade admissível no âmbito competitivo.
+
+<a href="https://www.youtube.com/watch?v=cu3kKbkEZSw&list=PLU2KWF7n4KZzvYwAk7h2LAx4Td0kadh-T&index=3"><img src="images/custo.png"></a>
+
+
 ## Classes de problemas 
 Diz-se que a complexidade de um problema computacional é o consumo de tempo e espaço do melhor algoritmo pssível para o problema. É válido salientar que para muitos problemas, o melhor algoritmo conhecido está longe de de ser o melhor algoritmo possível. Tendo como base os algoritmos já conhecidos, foi feita a classificação dos algoritmos nas seguinted classes: P, NP, NP-completo e Np-difícil.
 
