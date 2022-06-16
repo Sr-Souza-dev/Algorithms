@@ -4,8 +4,6 @@ void shellSort(tp vec, int size){
     int h=3*size+1;
     int aux, j;
 
-    
-
     do{
         h=h/3;
         contInteraction++;

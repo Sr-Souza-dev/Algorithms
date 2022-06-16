@@ -17,19 +17,34 @@ void print(tp *vec, int size){
     std::cout<<std::endl;
 }
 
-
-// Declara os vetores
-int vecInt[] = {0,6,46,3,9,7,8,16,26, 28, 43};
-float vecFloat[] = {0.6,6.95,46.12,3.99,4.9,7.18,8.6,16,33};
-
+// Declarando os vetores da base
+static const int baseInt[] = {0,6,46,3,9,7,8,16,43, 26, 28, 43};
+static const float baseFloat[] = {0.6,6.95,46.12,3.99,4.9,7.18,8.6,16,33};
 
 // Descobre o tamanho do vetor
 int vecSize(std::string opt){
     if(opt == "int"){
-        return (sizeof(vecInt) / sizeof(int));
+        return (sizeof(baseInt) / sizeof(int));
 
     }else if(opt == "float"){
-        return (sizeof(vecFloat) / sizeof(float));
+        return (sizeof(baseFloat) / sizeof(float));
     }
     return -1;
 }
+
+// Declara os vetores
+int *vecInt = new int[vecSize("int")];
+float *vecFloat = new float[vecSize("float")];
+
+// Volta o vetor ao seu estado inicial
+void rebase(){
+    for(int i=0; i<vecSize("int"); i++){
+        vecInt[i] = baseInt[i]; 
+    }
+
+    for(int i=0; i<vecSize("float"); i++){
+        vecFloat[i] = baseFloat[i]; 
+    }
+}
+
+

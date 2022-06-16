@@ -11,17 +11,26 @@ int contInteraction = 0;
 
 using namespace std;
 
+void cleanVars(){
+    rebase();
+    contInteraction = 0;
+}
+
 int main(){
     cout<<"------------------------ Bubble Sort --------------------------"<<endl;
+    cleanVars();
     runBubble();
 
     cout<<"\n---------------------- Selection Sort -------------------------"<<endl;
+    cleanVars();
     runSelection();
 
     cout<<"\n----------------------- Insertion Sort -------------------------"<<endl;
+    cleanVars();
     runInsertion();
 
     cout<<"\n------------------------- Shell Sort ---------------------------"<<endl;
+    cleanVars();
     runShell();
 
 
