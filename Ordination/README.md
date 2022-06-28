@@ -81,7 +81,12 @@ Na realidade, para evitar o custo de ficar transitando com o 'pivô' por toda li
 
 #### Heap Sort
 
+Esse algoritmo gera uma arvore binária que busca sempre colocar o maior elemento no nodo 'pai'. Começando uma varredura dos nodos 'folhas' e comparando com cada nodo de nível superior, esse algoritmo carrega o maior elemento para o topo da arvore e truca ele na ultima posição do vetor... Repete esses passos com o mesmo vetor mas restrito ao tamanho n-1 (faz isso até que o vetor esteja todo ordenado). Em sua essência ele pega sempre o maior valor e leva para o final do vetor.
 
+    Melhor Caso: O(log N);
+    Pior Caso: O(N);
+
+<a href="https://medium.com/@aahana22012001/heap-and-heap-sort-algorithm-9bc53eb8672e"> <image src = "images/heap.png"></a>
 
 
 

@@ -18,7 +18,7 @@ void print(tp *vec, int size){
 }
 
 // Declarando os vetores da base
-static const int baseInt[] = {0,6,46,3,9,7,8,16,43, 26, 28, 43};
+static const int baseInt[] = {9,2,6,1,8};
 static const float baseFloat[] = {0.6,6.95,46.12,3.99,4.9,7.18,8.6,16,33};
 
 // Descobre o tamanho do vetor
