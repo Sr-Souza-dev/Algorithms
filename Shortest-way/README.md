@@ -28,6 +28,6 @@ Sendo considerado uma generalização do algoritmo de Dijkstra, esse algoritmo t
 
 ### Exemplo Caminho Mínimo (Dijkstra e Bellman Ford)
 
-| <div><img src="images/Dijkstra.jpg"></div> | <img src ="images/BellmanFord.jpg"> |
+| <div stryle="height:100%"><img src="images/Dijkstra.jpg"></div> | <img src ="images/BellmanFord.jpg"> |
 | -------- | ------- |
 
