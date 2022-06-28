@@ -28,6 +28,19 @@ Sendo considerado uma generalização do algoritmo de Dijkstra, esse algoritmo t
 
 ### Exemplo Caminho Mínimo (Dijkstra e Bellman Ford)
 
-| <div stryle="height:100%"><img src="images/Dijkstra.jpg"></div> | <img src ="images/BellmanFord.jpg"> |
+| <img src="images/Dijkstra.jpg"> | <img src ="images/BellmanFord.jpg"> |
 | -------- | ------- |
+
+
+# Distância mínima entre todos os pares de nós (Floyd-Warshall)
+Para encontrar a distância mínima de todos para todos pode-se utilizar tanto o algoritmo de Dijkstra (com custo O(N^3)) quanto o algoritmo de Bellman-Ford(com custo O(N^4)) se executado N vezes. 
+
+Para solucionar esse problema, foi proposto um algoritmo em 1962 por Robert Floyd baseado no algoritmo de Stephen Warshall que é capaz de calcular a distância mínima entre todos os pares de nós possíveis no grafo analisado. Trata-se de um algoritmo de programação dinâmica bottom-up (utiliza de soluções ótimas já encontradas de casos menores para encontrar soluções ótimas do macro) que funciona até mesmo com arcos com custos negativos (desde que não haja ciclos com custos negativos).
+
+Para tal feito, esse algoritmo utiliza de duas matrizes, sendo uma de Custos (D) e outra de predecessores (P). Feito isso, um valor inicial é atribuido a uma variável 'K' que auxiliará no calculo do custo do caminhamento pelo grafo. Iniciando K = 0, tem-se a matriz inicializada com todas as relações diretas do grafo (todo custo de nós adjacentes é setado na matriz de custo e consequentemente seu predecessor), ao incrementando 1 ao valor de K (K=1) o próximo passo do algoritmo é encontrar todos os caminhos que passam somente pelo nó 1 (tem somente o nó 1 como intermediário). De forma simplificada, é possível encontar esses caminhos realizando apenas a analise das matrizes, tal que se d{i,j} > d{i,k} + d{k,j}, então o valor do custo é atualizado para o novo caminho passando por 'K' e o predecessor assume o menor custo conhecido. Esse processo é repetido N, resultando no fim uma matriz com todos os custos mínimos entre dois nós.
+<br>
+É importante que se visualize a imagem abaixo para um melhor entendimento do algoritmo. 
+
+### Exemplo Caminho Mínimo (Floyd-Warshall)
+<img src="images/FloydWarshall.jpg">
 
