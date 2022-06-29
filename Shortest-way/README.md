@@ -21,7 +21,7 @@ Tendo conhecimento das estruturas acima, o algoritmo de Dijkstra inicializa com 
 Sendo considerado uma generalização do algoritmo de Dijkstra, esse algoritmo também encontra o caminho mínimo em um grafo, diferenciando apenas com a inserção de um vetor 'H' que é responsável por contabilizar quantas vezes um determinado nó foi analizado, ou seja, com esse algoritmo é possivel encontrar o caminho mínimo de um grafo que tenha custos negativos em suas arestas (arcos) desde que não haja ciclos negativos. Para tal feito, ele caminha igualmente ao algoritmo de Dijkstra, porém quando o predecessor 'x' de um nó 'i' é atualizado e se esse nó 'i' estiver no conjunto de nós já visitados (R), então esse nó 'i' retorna para o conjunto de nós desconhecidos (Q) e acrescenta-se uma unidade no seu contador do vetor 'H'. Esse processo é realizado até que não haja mais elementos no conjunto de nós desconhecidos (Q). 
 
 
-    Melhor Caso: O(V E) -> O(N^2), tal que V é a quantidade de vertices e E a quantidade de arestas;
+    Melhor Caso: O(V E) -> O(N^2), tal que V é a quantidade de vértices e E a quantidade de arestas;
     Pior Caso: O(N^3);
 
 <img src="images/bellmanfordGF.jpeg">
