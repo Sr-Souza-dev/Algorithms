@@ -29,20 +29,3 @@ void mergeSort(tp *vec, int start, int end){                                    
     }
 }
 
-
-// ***************** Testando o metodo de ordenação *****************
-void runMerge(){
-    // Teste com valores inteiros
-    mergeSort(vecInt, 0, (vecSize("int") - 1));
-    std::cout<<"*********** INT VALUES (Merge) ************"<<std::endl;
-    print(vecInt, vecSize("int"));
-    std::cout<<"Quantidade de Interações: "<<contInteraction<<std::endl;
-
-    contInteraction = 0;
-
-    // Teste com valores flutuantes
-    mergeSort(vecFloat, 0, vecSize("float") - 1);
-    std::cout<<"********** FLOAT VALUES (Merge) ***********"<<std::endl;
-    print(vecFloat, vecSize("float"));
-    std::cout<<"Quantidade de Interações: "<<contInteraction<<std::endl;
-}

@@ -7,7 +7,6 @@ int partition(tp *vec, int start, int end){
     tp pivot = vec[index_pivot];
 
     while(arrow_right <= end){
-        contInteraction++; 
         if(vec[arrow_right] < pivot){
             swap(&vec[arrow_left + 1], &vec[arrow_right]);
             arrow_left++;
@@ -33,20 +32,3 @@ void quickSort(tp *vec, int start, int end){
     }
 }
 
-
-// ***************** Testando o metodo de ordenação *****************
-void runQuick(){
-    // Teste com valores inteiros
-    quickSort(vecInt, 0, vecSize("int") - 1);
-    std::cout<<"*********** INT VALUES (Quick) ************"<<std::endl;
-    print(vecInt, vecSize("int"));
-    std::cout<<"Quantidade de Interações: "<<contInteraction<<std::endl;
-
-    contInteraction = 0;
-
-    // Teste com valores flutuantes
-    quickSort(vecFloat, 0, vecSize("float") - 1);
-    std::cout<<"********** FLOAT VALUES (Quick) ***********"<<std::endl;
-    print(vecFloat, vecSize("float"));
-    std::cout<<"Quantidade de Interações: "<<contInteraction<<std::endl;
-}
