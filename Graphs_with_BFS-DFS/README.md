@@ -129,7 +129,7 @@ No grafo de exemplo, (1, 2, 5, 1, 2, 3) é um caminho com comprimento 5, e (5, 2
 ---
 ## Custo
 ### Tempo de execução (comparativo)
-Para obter os seguintes resultados, foi feito 5 testes para cada método de implementação
+Para obter os seguintes resultados, foram realizados 5 testes para cada método de implementação
 utilizando os mesmos grafos.
 
 <img src="images/custTime.png">
@@ -140,7 +140,7 @@ custos diferentes (tanto para análise de tempo quanto para análise de memória
 diferentes maneiras de implementação. Veja a seguir os seguintes gráficos simbolizando o
 consumo de memória em cada estrutura:
 
-<img src="images/custMemory.png>
+<img src="images/custMemory.png">
 
 ---
 ## Complilação
@@ -151,4 +151,4 @@ Basta fazer o download do arquivo, abrir o terminal na pasta do arquivo (mesma p
 <a href="https://pt.wikipedia.org/wiki/Teoria_dos_grafos#:~:text=no%20mesmo%20v%C3%A9rtice.-,Tipos%20de%20grafos,%C3%A9%20igual%20%C3%A0%20sua%20val%C3%AAncia.">Wikipedia.org</a>
 <br/>
 
-**OBS:** Uma descrição completa sobre a implementação do código pode ser visualizada clicando <a href="">aqui<a> ou acessado o pdf presente neste repositório.
+**OBS:** Uma descrição completa sobre a implementação do código pode ser visualizada clicando <a href="https://github.com/Sr-Souza-dev/Algorithms/blob/main/Graphs_with_BFS-DFS/Explica%C3%A7%C3%A3o.pdf">aqui<a> ou acessado o pdf presente neste repositório.
