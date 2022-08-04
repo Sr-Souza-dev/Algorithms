@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>        //Biblioteca necessaria para o uso de booleanos
+#include <stdbool.h>                //Biblioteca necessaria para o uso de booleanos
 
 typedef struct lista List;
 typedef struct node Node;
@@ -18,7 +18,7 @@ struct lista{                //Struct que controla o tamanho da lista e aponta q
     Node* head;
 };
 
-List* creatList(){                             //Criando uma lista
+List* creatList(){                              //Criando uma lista
     List* list = (List*) malloc(sizeof(List));
     list->size = 0;                             //Como a lista acabou de ser criada, é necessario definir seu tamanho como 0 (Vazio)
     list->head = NULL;                          //É necessario definir o cabeçalho (1º elemento) como nulo também já que a lista começa vazia
@@ -36,7 +36,7 @@ void push(List* list, DataNode data)            //Adcionando elementos (insere s
 //---------------------------------------------------------------------------------------------------------------------------------------
 void printList(List *list)                      //Imprime todos os elementos da lista
 {
-    if(isEmpty(list))                         //Verifica se a lista está vazia
+    if(isEmpty(list))                           //Verifica se a lista está vazia
     {
         printf("Lista Vazia \n");
         return;
@@ -66,38 +66,38 @@ bool isEmpty(List *list)                        //Verifica se a lista está vazi
     return (list->size == 0);
 }
 //---------------------------------------------------------------------------------------------------------------------------------------
-Node* atPos(List *list, int index)              //Busca um elemento de acordo com o indice na lista
+Node* atPos(List *list, int index)                  //Busca um elemento de acordo com o indice na lista
 {
-    if(index >=0 && index < list->size)         //Verifica se o indice passado é válido para está lista
+    if(index >=0 && index < list->size)             //Verifica se o indice passado é válido para está lista
     {
-        Node *node = list->head;             //Cria o ponteiro auxiliar para que não haja alterações na lista
-        for(int i = 0; i<index; i++)            //Faz um loop indo de 0 até index, sendo que respeita os indeces como se fosse vetor [0 = 1ºposição]
+        Node *node = list->head;                    //Cria o ponteiro auxiliar para que não haja alterações na lista
+        for(int i = 0; i<index; i++)                //Faz um loop indo de 0 até index, sendo que respeita os indeces como se fosse vetor [0 = 1ºposição]
         {
-            node = node->next;                    //Vai para o proximo elemento da lista até encontrar o desejado
+            node = node->next;                      //Vai para o proximo elemento da lista até encontrar o desejado
         }
-        return node;                            //Retorna o conteúdo do indice desejado
+        return node;                                //Retorna o conteúdo do indice desejado
     }
     return NULL;
 }
 //---------------------------------------------------------------------------------------------------------------------------------------
-int indexOf(List *list, Node *node)             //Buscando por um No (Bloco da lista)
+int indexOf(List *list, Node *node)                 //Buscando por um No (Bloco da lista)
 {
-    if(node != NULL)                           //Verificando se o No passado é valido
+    if(node != NULL)                                //Verificando se o No passado é valido
     {
-        Node *pointer = list->head;             //Ponteiro auxiliar para não danificar a estrutura da lista
-        int index=0;                            //Indice para nos dizer qual a posição do No procurado
+        Node *pointer = list->head;                 //Ponteiro auxiliar para não danificar a estrutura da lista
+        int index=0;                                //Indice para nos dizer qual a posição do No procurado
         while(pointer != node && pointer != NULL)   //percorrendo a lista até encontrar o No, caso não pertença vai sair do laço
         {
             pointer = pointer->next;
             index++;
         }
-        if(pointer != NULL)                     //Verifica se o No foi encontrado e retorna seu indice
+        if(pointer != NULL)                         //Verifica se o No foi encontrado e retorna seu indice
         {
             return index;
         }
     }
     printf("No não encontrado nestá lista\n");
-    return -1;                                 //Retorna -1 caso o No não seja encontrado
+    return -1;                                      //Retorna -1 caso o No não seja encontrado
 }
 //---------------------------------------------------------------------------------------------------------------------------------------
 void erase(List *list, int index)                   //Excluindo um elemento em qualquer posição da lista

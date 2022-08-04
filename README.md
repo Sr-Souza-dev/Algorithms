@@ -25,7 +25,6 @@ f(x) = O(g(x)) se e somente se |f(N)| <= C|g(N)| para todo N > n0
 
 As funções mais comuns podem ser visualizadas abaixo com seus respectivos gráficos. (Na imagem abaixo a função fatorial não foi expressa, mas ela é mais custosa do que a exponecial "!n > c^n").
 
-| ---- | ---- |
 | ![](images/Onotation.jpeg) | ![](images/cus.jpg) |
 | ---- | ---- |
 
