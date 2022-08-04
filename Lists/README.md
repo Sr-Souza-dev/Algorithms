@@ -3,7 +3,7 @@ Lista linear é uma estrutura de dados na qual elementos de um mesmo tipo de dad
 
 <img src="images/simp.jpg">
 
-### Lista Dinamica
+### Lista Dinâmica
 Várias estruturas de dados complexas podem ser criadas utilizando simultaneamente structs e ponteiros. Uma destas estruturas é a lista encadeada. Uma lista encadeada é uma seqüência de structs, que são os nós da lista, ligados entre si através de ponteiros. Esta seqüência pode ser acessada através de um ponteiro para o primeiro nó, que é a cabeça da lista. Cada nó contém um ponteiro que aponta para a struct que é a sua sucessora na lista. O ponteiro da última struct da lista aponta para NULL, indicando que se chegou ao final da lista. Esta estrutura de dados é criada dinamicamente na memória (utiliza-se malloc() e free()), de modo que se torna simples introduzir nós nela, retirar nós, ordenar os nós, etc. 
 
 <img src="images/encad.png">
