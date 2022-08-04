@@ -2,6 +2,16 @@
 O problema de caminho mínimo considera um grafo ponderado, tal que seus pesos representam o custo para caminhar de um nó ao outro. O objetivo deste problema é minimizar o custo partindo de um nó 's' até um nó 'k'.
 Tal problema poderia ser representado e solucionado por algoritmos de programação linera inteira (como o simplex), porém como a complexidade desse algoritmo é muito alta (pode atingir custo de tempo exponencial), alguns algoritmos foram desenvolvidos para solucionar este problema, dentre eles temos os de: Edsger W. Dijkstra, Bellman Ford e Floyd Warshall
 
+## Implementação
+A implementação conta com dois arquivos que vão auxiliar a construção do grafo da figura abaixo, sendo que cada arquivo segue a determinada ordem de informação descrita em sequência: 
+
+```sh
+    adjacencia.txt -> (Número do vertice 1, Número do vertice 2, Custo do trajeto)
+    incidencia.txt -> (Número da aresta, Número do vertice 1, Número do vertice 2, Custo do trajeto)
+```
+
+<img src="images/implementationGF.jpg">
+
 ## Dijkstra
 Esse algoritmo foi proposto em 1959 por Edsger W. Dijkstra com o intuito de encontrar o caminho mínimo de grafos ponderados com somente arcos positivos. Para tal feito, este algoritmo define algumas estruturas principais para seu funcionamento, sendo elas:
 
