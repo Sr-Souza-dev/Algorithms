@@ -5,10 +5,8 @@ Tal problema poderia ser representado e solucionado por algoritmos de programaç
 ## Implementação
 A implementação conta com dois arquivos que vão auxiliar a construção do grafo da figura abaixo, sendo que cada arquivo segue a determinada ordem de informação descrita em sequência: 
 
-```sh
     adjacencia.txt -> (Número do vertice 1, Número do vertice 2, Custo do trajeto)
     incidencia.txt -> (Número da aresta, Número do vertice 1, Número do vertice 2, Custo do trajeto)
-```
 
 <img src="images/implementationGF.jpg">
 
