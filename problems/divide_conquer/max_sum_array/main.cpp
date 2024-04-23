@@ -82,7 +82,8 @@ int main() {_
 
     const MaxInterval interval = findMaxSum(vec, 0, n);
     const MaxInterval intervalw = findMaxSumLinear(vec, 0, n);
-    cout<<"left: "<<interval.low<<" | high: "<<interval.high<<"  |  max: "<<interval.maxSum<<endl;
+
+    cout<<"left: "<<interval.low <<" | high: "<<interval.high <<"  |  max: "<<interval.maxSum<<endl;
     cout<<"left: "<<intervalw.low<<" | high: "<<intervalw.high<<"  |  max: "<<intervalw.maxSum<<endl;
     return 0;
 }
