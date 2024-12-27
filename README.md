@@ -1,6 +1,8 @@
 ## Descrição
 Olá, meu nome é Gabriel Rosa. No momento, sou estudante de Engenharia de Computação no CEFET-MG. Este repositório busca armazenar todos as estruturas de dados estudadas por mim... Qualquer dúvida ou detalhe que deseja tratar sobre estes documentos, sinta-se a vontande para propor algo ou entrar em contato. </br> Att. Gabriel.
 
+![ref](https://github.com/black-shadows/Cracking-the-Coding-Interview/tree/master)
+
 ## Introdução
 Informalmente, um algoritmo é qualquer procedimento computacional bem definido que objetiva solucionar algum problema computacional bem especifico, ou seja, a partir de um conjunto de valores como entrada ele produz algum(s) conjunto(s) de valor(es) como saída. Diz-se que um algoritmo é correto se, para toda instância de entrada, ele retornar uma saída correta
 
